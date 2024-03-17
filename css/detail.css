@@ -1,15 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #000000;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
 }
 
 #movie-details {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #9a9a9a;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
   display: flex;
@@ -20,32 +20,65 @@ body {
 }
 
 #movie-info img {
-  width: 200px;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
-  padding: 15px;
-  padding-right: 20px;
+  border-radius: 5px;
 }
 
 #movie-text {
   margin-left: 20px;
+  text-align: justify;
+  line-height: 25px;
 }
 
 #movie-text h1 {
   margin-top: 0;
-  text-align: center;
 }
 
-#movie-text p {
+#movie-rating-genres {
+  display: flex;
+  flex-direction: column;
+}
+
+#movie-rating-genres p {
   margin: 5px 0;
-  text-align: left;
 }
 
-#movie-text a {
-  text-decoration: none;
-  color: #007bff;
+#movie-url {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#movie-text a:hover {
-  text-decoration: underline;
+#movie-url:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive CSS menggunakan Media Queries */
+@media screen and (max-width: 600px) {
+  #movie-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #movie-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #movie-info img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #movie-url {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -9,11 +9,15 @@ h1 {
   color: #581c1c;
   text-transform: uppercase;
   letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
 }
 #movies {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  align-items: stretch;
+  justify-content: space-around;
 }
 .movie {
   border: 1px solid #ccc;

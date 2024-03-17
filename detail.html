@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Film</title>
     <link rel="stylesheet" href="css/detail.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <div id="movie-details">
@@ -13,11 +12,20 @@
         <img id="movie-poster" src="" alt="" />
         <div id="movie-text">
           <h1 id="movie-title"></h1>
-          <p id="movie-rating"></p>
+
+          <p><strong>Rating :</strong> <span id="movie-rating"></span></p>
+          <p><strong>Genre :</strong> <span id="movie-genres"></span></p>
+          <p><strong>Release Date:</strong> <span id="movie-releaseDate"></span></p>
+          <p><strong>Duration:</strong> <span id="movie-duration"></span></p>
+          <p><strong>Synopsis:</strong> <span id="movie-synopsis"></span></p>
+          <p><strong>Countries:</strong> <span id="movie-countries"></span></p>
+          <p><strong>Cast:</strong> <span id="movie-casts"></span></p>
+          <button id="movie-url">Lihat Trailer</button>
         </div>
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="javascript/detal.js"></script>
   </body>
 </html>
