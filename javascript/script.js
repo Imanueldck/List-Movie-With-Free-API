@@ -24,7 +24,11 @@ function loadMovies() {
 
         // Menambahkan event click untuk menampilkan detail film
         posterElement.click(function () {
-          showDetail(movie);
+          // Membuat URL baru dengan id film
+          const newPageUrl = "detail.html?id=" + movie._id;
+
+          // Navigasi ke halaman baru
+          window.location.href = newPageUrl;
         });
 
         // Menambahkan elemen ke dalam elemen film
