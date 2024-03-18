@@ -1,16 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
 }
 
 #movie-details {
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   display: flex;
 }
@@ -81,4 +81,63 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* CSS untuk card film */
+#recommendations {
+  padding: 20px;
+  margin: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 250px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-text {
+  padding: 10px;
+}
+
+.card-text h3 {
+  margin-top: 0;
+}
+
+.card-text p {
+  margin: 5px 0;
+}
+
+/* Gaya CSS untuk tombol */
+.buttonrekomen {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding-top: 10px;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }

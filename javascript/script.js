@@ -46,3 +46,17 @@ function loadMovies() {
 
 // Memanggil fungsi untuk memuat data film saat halaman dimuat
 loadMovies();
+// Menangani peristiwa saat pengguna memasukkan teks ke dalam kotak pencarian
+$("#search-input").on("input", function () {
+  const searchTerm = $(this).val().toLowerCase();
+  const movies = $(".movie");
+
+  movies.each(function () {
+    const title = $(this).find("img").attr("alt").toLowerCase();
+    if (title.includes(searchTerm)) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
+});
